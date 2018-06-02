@@ -1,0 +1,44 @@
+[user]
+	name = Vincent
+	email = trichon@kth.se
+[color]
+	ui = auto
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /home/vincent/.gitignore
+[alias]
+	l = log --graph --pretty=format:"%C(green)%h\\ %C(yellow)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	st = status
+
+	a = add
+    # add all tracked files that have changed
+	au = add -u
+    # choose which changes to commit
+	ap = add -p
+    # unstage modified file
+	rms = reset HEAD --
+
+	c = commit --verbose
+	cm = commit -m
+    # modify the commit message
+	cmod = commit --amend -c HEAD
+
+    # list local branches | create a branch
+	b = branch
+    # switch current branch
+	co = checkout
+    # create and switch to the new branch
+	cob = checkout -b
+    # list remote branches
+	br = branch -r
+    # list all branches
+	ba = branch -a
+    # list branches not merged with the current one
+	b-no-merged = branch --no-merged
+    # list branches merged with the current one
+	b-merged = branch --merged
+
+	# list aliases
+	la = "!git config -l |grep alias | cut -c 7-"
+[push]
+	default = simple

@@ -1,0 +1,27 @@
+#! /bin/bash
+
+link_file () {
+	origin=$1
+	dest=$2
+	echo "setting $dest..."
+	rm $dest
+	ln -s $origin $dest
+}	
+
+curr_path=`pwd`
+
+echo "deploying the dotfiles..."
+
+# bash
+link_file "$curr_path/bash/bashrc" "$HOME/.bashrc"
+link_file "$curr_path/bash/aliases" "$HOME/.bash/aliases"
+link_file "$curr_path/bash/env" "$HOME/.bash/env"
+
+link_file "$curr_path/gitconfig" "$HOME/.gitconfig"
+link_file "$curr_path/ssh_config" "$HOME/.ssh/config"
+link_file "$curr_path/tmux.conf" "$HOME/.tmux.conf"
+link_file "$curr_path/vimrc" "$HOME/.vimrc"
+link_file "$curr_path/vifmrc" "$HOME/.vifm/vifmrc"
+link_file "$curr_path/Xdefaults" "$HOME/.Xdefaults"
+link_file "$curr_path/profile" "$HOME/.profile"
+link_file "$curr_path/rc.lua" "$HOME/.config/awesome/rc.lua"

@@ -1,0 +1,89 @@
+  # general
+alias ls='ls --color=auto'
+alias vi='vim'
+alias vis='sudo vim'
+alias reload='source ~/.bashrc'
+alias reboot='/sbin/shutdown -r now'
+alias off='shutdown -P now'
+alias alias_print='cat ~/.bash/aliases'
+alias alias_edit='vi ~/.bash/aliases'
+alias click='synclient Tapbutton2=2;printf "TapButton2=2 --> ok\n";synclient TapButton3=3; printf "TapButton3=3 --> ok\n"'
+alias cleanTrash='rm -rf ~/.vifm/Trash/*'
+alias cp='cp -v'
+alias cp_r='rsync -aHAXxv --numeric-ids --progress'
+alias ..='cd ..'
+
+  # passwords
+alias psswd='apg -a 1 -m 25 -x 30'
+alias psswd_s='apg -a 1 -m 20 -x 25 -s'
+
+  # apt-get
+alias install='sudo apt-get install' # installs pkg
+alias update='sudo apt-get update' # installs new updated pkg
+alias upgrade='sudo apt-get upgrade' # installs new updated pkg
+alias upgrade-smart='sudo apt-get dist-upgrade' # smart upgrade to new pkg
+alias remove='sudo apt-get remove' # removes pkg
+alias autoremove='sudo apt-get autoremove' # removes any orphaned pkg
+alias remove-all='sudo apt-get --purge remove' # removes pkg + config files
+alias check='sudo apt-get check' # check for broken pkg
+
+  # apt-cache
+alias search='apt-cache search' # search name + description
+alias show='apt-cache show' # all the info on a pkg
+alias showpkg='apt-cache showpkg' # all dependencies
+alias depends='apt-cache depends' # what it depends on
+alias rdepends='apt-cache rdepends' # what depends on it
+
+  # beet
+alias env_beet='source /home/vincent/python_ENV/beets-python3.6.2/bin/activate'
+alias confbeet='vim ~/.config/beets/config.yaml'
+
+  # media
+alias mlacie='mount /mnt/lacie'
+alias umlacie='umount /mnt/lacie'
+alias melement='mount /mnt/element'
+alias umelement='umount /mnt/element'
+
+  # github
+alias token='echo "6a9674e1bd7f56d9f36d7cc6ad1e85a9d5dd9238"'
+
+  # ros
+alias rros='export ROS_MASTER_URI=http://192.168.1.69:11311'
+alias rras='ssh -Y ras13@192.168.1.69'
+alias rdep='echo "roscpp std_msgs geometry_msgs"'
+
+  # network
+alias ping='ping -c 3'
+alias network='sudo gnome-control-center network'
+alias vpnfr='sudo openvpn Roubaix-rbx1.ovpn'
+
+  # awesome
+alias test_server='Xephyr -ac -br -noreset -screen 1024x600 :1 &'
+alias test_open1='DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.test.lua'
+alias test_open2='DISPLAY=:1.0 awesome -c ~/.config/awesome/rc.test2.lua'
+
+  # tmux
+alias tmux-k='tmux kill-session -t'
+alias tmux-a='tmux a -t'
+
+  # rsync
+alias thesis_up-sync='rsync -u -v -r --delete --progress -e ssh /home/vincent/Thesis/ feral:/media/sdd1/keypfod1/private/PERSO/Thesis/'
+alias thesis_down-sync='rsync -u -v -r --delete --progress -e ssh feral:/media/sdd1/keypfod1/private/PERSO/Thesis/ /home/vincent/Thesis/'
+alias dot_up-sync='rsync -u -v -r --delete --copy-links --progress -e ssh /home/vincent/dot_files/ feral:/media/sdd1/keypfod1/private/PERSO/dot_files/'
+alias dot_down-sync='rsync -u -v -r --delete --progress -e ssh feral:/media/sdd1/keypfod1/private/PERSO/dot_files/ /home/vincent/'
+
+ # C debug
+alias gdb_sup='gdb --batch --ex run --ex bt --ex q --args'
+
+ # ipfs
+alias myid='grep PeerID ~/.ipfs/config | cut -d\" -f4'
+
+ # jekyll
+alias wrun='bundle exec jekyll serve'
+
+# camera
+alias img='rsync -ruav /mnt/olympus/DCIM/100OLYMP /home/vincent/Pictures'
+
+# pixracer
+alias reset_home='wget -q "http://192.168.1.7/setparameters?mode=0"'
+alias pix_connect='/home/vincent/src/Firmware/Tools/mavlink_shell.py 0.0.0.0:14550'

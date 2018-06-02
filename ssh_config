@@ -1,0 +1,33 @@
+# GitLab.com KTH
+Host gitlab.com-vinceTrichon
+	User git
+	hostname gitlab.com
+	IdentityFile ~/.ssh/id_rsa_kth
+
+# GitLab.com private
+Host gitlab.com-DrSquirrel
+	User git
+	hostname gitlab.com
+	IdentityFile ~/.ssh/id_rsa
+
+# Seedhost
+Host shost
+	User kooshdyn
+	hostname raw.seedhost.eu
+	IdentityFile ~/.ssh/id_rsa
+
+# rtorrent dedi_huuge
+Host huge_rtorrent
+	User rtorrent
+	Hostname 136.243.62.101
+	IdentityFile ~/.ssh/id_rsa
+
+Host huge_root
+	User root
+	Hostname 136.243.62.101
+	IdentityFile ~/.ssh/id_rsa
+
+Host huge_vincent
+	User vincent
+	Hostname 136.243.62.101
+	IdentityFile ~/.ssh/id_rsa

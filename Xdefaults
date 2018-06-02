@@ -1,0 +1,111 @@
+!-- title -- !
+
+URxvt*title: urxvt
+URxvt*termName: rxvt-256color
+URxvt*cursorBlink: true
+URxvt*urgentOnBell: true
+
+!-- URL select --!
+
+!URxvt.perl-ext-common: default,matcher,resize-font
+!URxvt.keysym.M-u: perl:select_next
+!URxvt.urlLauncher: /usr/bin/chromium
+!URxvt.underlineURLs: true
+
+!-- Changing the font on the fly --!
+!URxvt.resize-font.smaller: C-\033[19~
+!URxvt.resize-font.bigger: C-\033[20~
+
+!-- font --!
+
+!URxvt.font: -*-terminus-*-*-*-*-13-*-*-*-*-*-*-u
+!URxvt.font: -*-droid sans mono-*-*-*-*-14-*-*-*-*-*-*-u
+!URxvt.font: -*-monospace-*-*-*-*-13-*-*-*-*-*-*-u
+!URxvt*font: xft:monospace:pixelsize=20
+URxvt.font: xft:monospace:pixelsize=15:antialias=true
+!URxvt.font: xft:hack:pixelsize=13:antialias=true
+!URxvt.font: xft:iosevka term slab:pixelsize=13:antialias=true
+!URxvt.font: xft:iosevka-term-regular:size=15:antialias=true
+URxvt.letterSpace: 0
+!
+URxvt.scrollBar: false
+URxvt.skipBuiltinGlyphs: true
+
+!-- options --!
+
+URxvt.boldMode: false
+!URxvt.imLocale: en_US.UTF-8
+URxvt.loginShell: true
+URxvt.saveLines: 512
+!urxvt.geometry: 220x80
+URxvt.borderless: true
+!URxvt.xftAntialias: true
+URxvt.jumpScroll: true
+URxvt.tintColor: white
+URxvt.internalBorder: 0
+URxvt.cursorBlink: false
+URxvt.cursorColor: #DCDCCC
+URxvt.cursorColor2: #000000
+URxvt.background: #FFFFFF
+URxvt.foreground: #ddccbb
+URxvt.colorBD: #ffffff
+URxvt.colorIT: #bbbbbb
+URxvt.colorUL: #999999
+URxvt.underlineColor: #999999
+!Xcursor.theme: CG
+
+!-- transparency --!
+
+URxvt.inheritPixmap: true
+URxvt.tintColor: white
+URxvt.shading: 7
+
+!-- termimal colors --!
+
+URxvt*background: #000000
+URxvt*foreground: #a8a8a8
+
+!-- black 
+URxvt*color0:  #000000
+URxvt*color8:  #545054
+!-- red
+URxvt*color1:  #a80000
+URxvt*color9:  #f85450
+!-- green
+URxvt*color2:  #00a800
+URxvt*color10: #50fc50
+!-- yellow
+URxvt*color3:  #a85400
+URxvt*color11: #f8fc50
+!-- blue
+URxvt*color4:  #0000a8
+URxvt*color12: #5054f8
+!-- magneta
+URxvt*color5:  #a800a8
+URxvt*color13: #f854f8
+!-- cyan
+URxvt*color6:  #00a8a8
+URxvt*color14: #50fcf8
+!-- white
+URxvt*color7:  #a8a8a8
+URxvt*color15: #f8fcf8
+
+
+!URxvt*color0: #000000
+!URxvt*color0: #000000
+!URxvt*color0: #000000
+!URxvt*color1: #8a110e
+!URxvt*color2: #669f3d
+!URxvt*color3: #b3751e
+!URxvt*color4: #493d9f
+!URxvt*color5: #9216a3
+!URxvt*color6: #198a9c
+!URxvt*color7: #bfbdc0
+!URxvt*color8: #686773
+!URxvt*color9: #fc5166
+!URxvt*color10: #63ff54
+!URxvt*color11: #ffd75c
+!URxvt*color12: #766eff
+!URxvt*color13: #e151ff
+!URxvt*color14: #57ffec
+!URxvt*color15: #ffffff

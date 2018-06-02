@@ -1,0 +1,41 @@
+#
+# env
+#
+
+
+# ROS
+export ROS_DISTRO='melodic'
+export ROS_PACKAGE_PATH=$HOME/catkin_ws/src/*:$ROS_PACKAGE_PATH
+px4="/home/vincent/github/Firmware"
+export GAZEBO_RESOURCE_PATH=${GAZEBO_RESOURCE_PATH}:$HOME/github/thesis/choir/gazebo
+export GAZEBO_PLUGIN_PATH=$px4/build/posix_sitl_default/build_gazebo:${GAZEBO_PLUGIN_PATH}
+export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:$px4/Tools/sitl_gazebo/models
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$px4/Tools/sitl_gazebo/Build/msgs/:$px4/build/posix_sitl_default/build_gazebo
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$px4
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$px4/Tools/sitl_gazebo
+
+export LD_LIBRARY_PATH=/home/vincent/git/libyaml/src/.libs
+
+# added by Anaconda2 4.2.0 installer
+# export PATH="/home/vincent/anaconda2/bin:$PATH"
+
+PERL5LIB="/home/vincent/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/vincent/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/vincent/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/vincent/perl5"; export PERL_MM_OPT;
+
+#rakudo perl
+#export PATH=/home/vincent/rakudo/rakudo-star-2017.10/install/bin:/home/vincent/rakudo/rakudo-star-2017.10/install/share/perl6/site/bin:$PATH
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+
+# Install ruby gems to ~gems
+export GEM_HOME=$HOME/gems
+
+export VIMCONFIG=~/.vim
+export VIMDATA=~/.vim
+export BROWSER=/usr/bin/chromium
+export EDITOR=vim
+export TERMINAL=urxvt
+
